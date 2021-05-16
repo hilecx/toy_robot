@@ -7,5 +7,5 @@ import org.junit.runner.RunWith;
 
 @RunWith(JUnitPlatform.class)
 @SelectPackages("com.iress")
-public class AllUnitTest {
+public class AllUnitTests {
 }
