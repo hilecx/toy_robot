@@ -17,13 +17,10 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String command = scanner.nextLine();
         while (command != null && !command.equals("")) {
-//            System.out.println(command);
             application.execute(command);
             command = scanner.nextLine();
         }
-
         System.out.println("Exit");
-
     }
 
 }
