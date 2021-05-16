@@ -7,8 +7,7 @@ import com.iress.service.Impl.RobotControllerImpl;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import com.iress.service.testutils.Utils;
-import org.junit.jupiter.api.BeforeAll;
+import com.iress.testutils.Utils;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -25,6 +24,7 @@ public class RobotControllerTest {
 
     @Test
     public void testDoReport() {
+        //Since I use std.out in doReport(), this is not a standard test case
         Robot robot = Utils.createRobot();
         controller.doReport(robot);
         robot.setPlaced(false);

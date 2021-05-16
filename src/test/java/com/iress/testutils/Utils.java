@@ -1,4 +1,4 @@
-package com.iress.service.testutils;
+package com.iress.testutils;
 
 import com.iress.enums.Direction;
 import com.iress.model.Robot;

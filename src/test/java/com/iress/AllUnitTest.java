@@ -1,4 +1,4 @@
-package com.iress.service.impl;
+package com.iress;
 
 
 import org.junit.platform.runner.JUnitPlatform;

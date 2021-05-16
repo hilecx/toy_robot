@@ -8,5 +8,5 @@ public interface Controller<T> {
     public void move(T t);
     public void turnLeft(T t);
     public void turnRight(T t);
-    public void place(T t, int x, int y, Direction direction);
+    public void place(T t, Integer x, Integer y, Direction direction);
 }

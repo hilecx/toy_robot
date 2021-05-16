@@ -44,7 +44,7 @@ public class RobotControllerImpl implements Controller<Robot> {
     }
 
     @Override
-    public void place(Robot robot, int x, int y, Direction direction) {
+    public void place(Robot robot, Integer x, Integer y, Direction direction) {
         if(!isInTable(x,y)){
             return;
         }
