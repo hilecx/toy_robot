@@ -6,15 +6,10 @@ import com.iress.model.Robot;
 import com.iress.service.CommandDispatcher;
 import com.iress.service.Controller;
 
-public class RobotCommandDispatcherImpl implements CommandDispatcher<Robot> {
-    Controller controller;
-
-    public RobotCommandDispatcherImpl(Controller controller) {
-        this.controller = controller;
-    }
+public class RobotCommandDispatcherImpl implements CommandDispatcher<Robot, RobotControllerImpl> {
 
     @Override
-    public void dispatch(Robot robot, String command) {
+    public void dispatch(Robot robot, RobotControllerImpl controller, String command) {
         if (command.matches(CommandType.PLACE)) {
             PlaceCommand placeCommand = generatePlaceCommand(command);
             controller.place(robot, placeCommand.getX(),placeCommand.getY(),placeCommand.getDirection());

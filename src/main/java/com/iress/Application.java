@@ -11,14 +11,14 @@ public class Application {
     private CommandDispatcher dispatcher;
     private Robot robot;
 
-    public void init(){
+    public void init() {
         robotController = new RobotControllerImpl();
-        dispatcher = new RobotCommandDispatcherImpl(robotController);
+        dispatcher = new RobotCommandDispatcherImpl();
         robot = new Robot();
     }
 
-    public void execute(String command){
-        dispatcher.dispatch(robot, command);
+    public void execute(String command) {
+        dispatcher.dispatch(robot, robotController, command);
 
     }
 }
